@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Event Tracking</title>
+  <!-- Add your Google Tag Manager container code snippet here -->
+</head>
+<body>
+  <h1>Button Event Tracking Example</h1>
+  <button id="myButton">Click Me!</button>
+
+  <script>
+    document.getElementById('myButton').addEventListener('click', function() {
+      // Push the event data to Google Tag Manager data layer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'YOUR_TRIGGER_NAME'
+      });
+    });
+  </script>
+
+  <!-- Add the rest of your HTML content and closing tags here -->
+
+  <!-- Add your Google Tag Manager script tag here -->
+</body>
+</html>
